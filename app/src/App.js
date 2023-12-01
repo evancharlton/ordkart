@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   componentDidMount = () => {
-    fetch("/public/nb.json.gz")
+    fetch("/ordkart/nb.json.gz")
       .then((res) => res.arrayBuffer())
       .then((arrayBuffer) => pako.inflate(arrayBuffer, { to: "string" }))
       .then((str) => JSON.parse(str))
