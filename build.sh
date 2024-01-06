@@ -6,7 +6,7 @@ git checkout -B gh-pages
   cd app
   npm ci
   npm run build
-  cp public/nb.json.gz build/
+  cp nb.json.gz build/
 )
 git add -f app/build
 git commit -am "Rebuild website"

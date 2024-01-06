@@ -4,6 +4,11 @@ html {
   height: 100%;
 }
 
+#root {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .container {
   height: 100%;
   display: flex;
@@ -31,7 +36,7 @@ html {
 }
 
 .buttons-container button {
-  width: calc(100vw / 6);
+  width: clamp(10px, calc(100vw / 6), 60px);
   aspect-ratio: 1 / 1;
   margin: 8px auto;
   border-radius: 50%;
